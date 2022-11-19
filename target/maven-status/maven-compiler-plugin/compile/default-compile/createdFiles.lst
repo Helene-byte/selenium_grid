@@ -1,0 +1,8 @@
+pages/CheckoutPage.class
+pages/SearchResultsPage.class
+pages/ProductPage.class
+utils/OptionsManager.class
+utils/CapabilityFactory.class
+pages/HomePage.class
+pages/BasePage.class
+pages/ShoppingCartPage.class

@@ -1,0 +1,29 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="SmokeSuite" parallel="tests">
+    <test name="tests.SmokeTestsChrome" parallel="methods" thread-count="3">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="tests.SmokeTests">
+                <methods>
+                    <include name="checkMainComponentsOnHomePage"/>
+                    <include name="checkWishList"/>
+                    <include name="checkAddToCart"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="tests.SmokeTestsFirefox" parallel="methods" thread-count="3">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="tests.SmokeTests">
+                <methods>
+                    <include name="checkMainComponentsOnHomePage"/>
+                    <include name="checkWishList"/>
+                    <include name="checkAddToCart"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
