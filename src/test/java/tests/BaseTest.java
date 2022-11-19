@@ -18,6 +18,7 @@ import pages.SearchResultsPage;
 import pages.ShoppingCartPage;
 import utils.CapabilityFactory;
 
+
 public class BaseTest {
 
     protected static ThreadLocal<RemoteWebDriver> driver = new ThreadLocal<>();// ThreadLocal позволяет нам хранить данные, которые будут доступны только конкретным потоком. Каждый поток будет иметь свой собственный экземпляр ThreadLocal
